@@ -1,0 +1,210 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    color: #333;
+    background-color: #f4f4f4; 
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+h1, h2, h3 {
+    color: #004d99; 
+    margin-bottom: 10px; 
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #004d99; 
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #007bff; 
+    text-decoration: underline;
+}
+
+
+header {
+    background-color: rgb(0, 0, 0); 
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: white;
+    font-size: 1.5em; 
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px;
+}
+
+.menu-basico {
+    display: flex;
+    gap: 20px; 
+}
+
+.menu-basico a {
+    color: white;
+    font-weight: bold; 
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-basico a:hover {
+    background-color: #004d99; 
+    border-radius: 5px; 
+    text-decoration: none;
+}
+
+
+.banner {
+    background-color: #004d99; 
+    color: white;
+    padding: 60px 20px;
+    text-align: center; 
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.botao {
+    display: inline-block; 
+    background-color: #004d99; 
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #007bff; 
+    text-decoration: none;
+}
+
+
+.pagina-sobre, .pagina-entrevista { 
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.perfil {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.foto { 
+    width: 350px; 
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10%; 
+    margin-bottom: 10px;
+}
+
+
+.entrevista-qa { 
+    border-left: 5px solid #004d99; 
+    padding-left: 15px;
+    margin-bottom: 25px;
+    background-color: #e6f0ff; 
+    padding: 15px;
+    border-radius: 4px;
+}
+
+
+
+.destaque-citacao {
+    font-style: italic;
+    font-weight: bold;
+    color: hsl(211, 100%, 50%); 
+    margin: 10px 0;
+    padding: 5px 0;
+    border-top: 1px dashed #007bff; 
+    border-bottom: 1px dashed #007bff; 
+}
+
+.dicas-carreira ul {
+    list-style: disc; 
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.dicas-carreira li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffc107; 
+}
+
+.redes-sociais a {
+    margin: 0 5px;
+}
+
+
+@media (max-width: 768px) {
+    
+    .menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    .menu-basico {
+        flex-direction: column; 
+        width: 100%;
+        gap: 0;
+    }
+
+    .menu-basico a {
+        display: block;
+        padding: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-bottom: 1px solid #004d99; 
+    }
+    
+}
+

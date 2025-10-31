@@ -169,7 +169,9 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
-    margin-top: 40px;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
 }
 
 footer a {
@@ -178,6 +180,16 @@ footer a {
 
 .redes-sociais a {
     margin: 0 5px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+main {
+    flex: 1;
 }
 
 

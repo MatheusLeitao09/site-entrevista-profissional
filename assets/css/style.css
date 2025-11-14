@@ -1,26 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif; 
-    line-height: 1.6; 
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4; 
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
     padding: 20px;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
 }
 
-h1, h2, h3 {
-    color: #004d99; 
-    margin-bottom: 10px; 
+h1,
+h2,
+h3 {
+    /* Fonte moderna para títulos */
+    font-family: 'Montserrat', sans-serif;
+    color: #004d99;
+    margin-bottom: 10px;
 }
 
 p {
@@ -28,94 +37,106 @@ p {
 }
 
 a {
-    color: #004d99; 
-    text-decoration: none; 
+    color: #004d99;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #007bff; 
+    color: #007bff;
     text-decoration: underline;
 }
 
-
 header {
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
     color: white;
     padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
 }
 
 header h1 {
     color: white;
-    font-size: 1.5em; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
 }
 
 .menu-container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 0 20px;
 }
 
 .menu-basico {
     display: flex;
-    gap: 20px; 
+    gap: 40px;
 }
 
 .menu-basico a {
     color: white;
-    font-weight: bold; 
+    font-weight: bold;
     padding: 5px 10px;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    
 }
 
 .menu-basico a:hover {
-    background-color: #004d99; 
-    border-radius: 5px; 
+    background-color: #004d99;
     text-decoration: none;
+    color: white;
+   
 }
 
-
 .banner {
-    background-color: #004d99; 
+   
+    background: linear-gradient(45deg, #004d99, #007bff);
     color: white;
     padding: 60px 20px;
-    text-align: center; 
+    text-align: center;
     margin-bottom: 30px;
     border-radius: 8px;
 }
 
 .banner h1 {
     color: white;
-    font-size: 2.5em;
+    /* Título de destaque maior */
+    font-size: 3em;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
 .botao {
-    display: inline-block; 
-    background-color: #004d99; 
+    display: inline-block;
+    background-color: #004d99;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 12px 24px;
+    /* Um pouco mais de padding */
     margin-top: 20px;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    /* Sombra para dar "pop" ao botão */
+    box-shadow: 0 4px 10px rgba(0, 77, 153, 0.2);
+    /* Transição suave para todos os efeitos */
+    transition: all 0.3s ease;
 }
 
 .botao:hover {
-    background-color: #007bff; 
+    background-color: #007bff;
     text-decoration: none;
+    /* Efeito "lift" (elevar) */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
 }
 
-
-.pagina-sobre, .pagina-entrevista { 
+.pagina-sobre,
+.pagina-entrevista {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* Sombra de "card" mais suave */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
 .perfil {
@@ -123,38 +144,37 @@ header h1 {
     margin-bottom: 30px;
 }
 
-.foto { 
-    width: 350px; 
-    height: 350px;
+.foto {
+    width: 450px;
+    height: 450px;
     object-fit: cover;
-    border-radius: 10%; 
+    border-radius: 5%;
     margin-bottom: 10px;
+    /* Sombra sutil na foto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-.entrevista-qa { 
-    border-left: 5px solid #004d99; 
+.entrevista-qa {
+    border-left: 5px solid #004d99;
     padding-left: 15px;
     margin-bottom: 25px;
-    background-color: #e6f0ff; 
+    background-color: #e6f0ff;
     padding: 15px;
     border-radius: 4px;
 }
 
-
-
 .destaque-citacao {
     font-style: italic;
     font-weight: bold;
-    color: hsl(211, 100%, 50%); 
+    color: hsl(211, 100%, 50%);
     margin: 10px 0;
     padding: 5px 0;
-    border-top: 1px dashed #007bff; 
-    border-bottom: 1px dashed #007bff; 
+    border-top: 1px dashed #007bff;
+    border-bottom: 1px dashed #007bff;
 }
 
 .dicas-carreira ul {
-    list-style: disc; 
+    list-style: disc;
     margin-left: 40px;
     margin-bottom: 20px;
 }
@@ -169,43 +189,30 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
-    margin-top: auto;
     width: 100%;
-    position: relative;
+    margin: 0;
 }
 
 footer a {
-    color: #ffc107; 
+    color: #ffc107;
 }
 
 .redes-sociais a {
     margin: 0 5px;
 }
 
-.layout {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-}
-
-main {
-    flex: 1;
-}
-
-
 @media (max-width: 768px) {
-    
     .menu-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
-    
+
     header h1 {
         margin-bottom: 10px;
     }
 
     .menu-basico {
-        flex-direction: column; 
+        flex-direction: column;
         width: 100%;
         gap: 0;
     }
@@ -215,8 +222,22 @@ main {
         padding: 10px;
         margin-bottom: 5px;
         text-align: center;
-        border-bottom: 1px solid #004d99; 
+        border-bottom: 1px solid #444;
     }
-    
-}
 
+    .menu-basico a:hover {
+        background-color: #004d99;
+        
+    }
+
+    
+    .foto {
+        width: 90%;
+        height: auto;
+    }
+
+    .banner h1 {
+        font-size: 2.2em;
+        
+    }
+}
